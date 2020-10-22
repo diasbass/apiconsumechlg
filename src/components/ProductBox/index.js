@@ -13,6 +13,7 @@ class ProductBox extends Component {
               </figure>
               <Card.Body>
                 <Card.Title>{this.props.name}</Card.Title>
+                <p className="productbox--product-type">{this.props.type}</p>
                 <LinkContainer activeClassName="" to={`detail/` + this.props.url}><Button variant="success" className="btnCentered">Detalhes do Produto</Button></LinkContainer>
               </Card.Body>
             </Card>

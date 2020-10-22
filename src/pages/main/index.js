@@ -41,6 +41,7 @@ class Products extends Component {
             name={product.name}            
             thumb={product.images.medium}
             url={product.url}
+            type={product.type}
             key={product.sku}
           />
         );

@@ -20,6 +20,13 @@
       flex: 0 1 auto;
     }
   }
+  &--product-type{
+    margin: 2px auto;
+    max-width: 50%;
+    background-color: #905699;
+    border-radius: 5px;
+    color: #fff;
+  }
 }
 
 .card{

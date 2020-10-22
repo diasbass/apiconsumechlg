@@ -40,6 +40,7 @@ const ProductDetail = () => {
                 <Col sm={8}>
                   <div className="product-spec--description">
                     <h2>{product.name}</h2>
+                    <p>Produtor: {product.producer.name}</p>
                     <p>{product.sommelier.commentary}</p>
                     <p>
                       <strong className="font-bold">Harmonização: </strong>
@@ -55,6 +56,14 @@ const ProductDetail = () => {
                       <span>{product.countries[0].name}</span>
                     </p>
                     <h4>Sommelier: {product.sommelier.reviewer}</h4>
+                    <hr />
+                    <h3>Outras especificações</h3>
+                    <ul>
+                    <li>Volume: {product.volume}</li>
+                    <li>Teor Alcoólico: {product.alcoholContent}</li>
+                    <li>Serviço: {product.servingTemperature}</li>
+                    </ul>
+                    
                   </div>
                 </Col>
               </Row>
@@ -69,17 +78,12 @@ const ProductDetail = () => {
 
   return (
     <div className="productDetail container">
-      {/*<LinkContainer to="/" activeClassName="">
-        <Button variant="outline-success" size="sm">
-          Voltar para lista de produtos
-        </Button>
-      </LinkContainer>*/}
 
       <ProductItem />
 
       <LinkContainer to="/" activeClassName="">
-        <Button variant="outline-success" size="sm">
-          Voltar para lista de produtos
+        <Button variant="outline-success" className="btn-prev" size="sm">
+          Voltar para lista
         </Button>
       </LinkContainer>
     </div>
