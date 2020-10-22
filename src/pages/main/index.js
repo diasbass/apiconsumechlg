@@ -3,6 +3,7 @@ import axios from 'axios';
 import ProductBox from '../../components/ProductBox';
 import { Container, Row } from 'react-bootstrap';
 import "./main.scss";
+import loading from '../../assets/loading.gif';
 
 class Products extends Component {
   state = {
@@ -33,7 +34,7 @@ class Products extends Component {
   
   render() {
     let products = <p>Ops, ocorreu um erro! Tente novamente</p>;
-    let loadingMessage = 'Carregando...';
+    let loadingMessage = <img src={loading} className="loading-image" alt="loading" />;
     if (!this.state.errorApi) {
       products = this.state.listProducts.map((product) => {
         return (

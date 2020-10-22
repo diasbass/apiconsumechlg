@@ -1,3 +1,13 @@
 .main-content {
   padding-bottom: 45px;
+  text-align: center;
+  position: relative;
+  .loading-image {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 }
