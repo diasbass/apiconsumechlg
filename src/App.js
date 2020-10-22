@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './main.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from './components/Header';
 import Main from './pages/main';
 import Product from './pages/product';
 import Footer from './components/Footer';
-
 
 const App = () => (
   <div className="App">

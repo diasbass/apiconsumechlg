@@ -1,0 +1,32 @@
+.productbox {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  &--main-image {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-height: 250px;
+    height: auto;
+    margin: 5px auto;
+    img {
+      max-height: 220px;
+      height: auto;
+      max-width: 100%;
+      width: auto;
+      -webkit-box-flex: 0;
+      flex: 0 1 auto;
+    }
+  }
+}
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  min-height: 50px;
+}

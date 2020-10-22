@@ -1,23 +1,23 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+import { LinkContainer } from 'react-router-bootstrap';
+import { Button, Card, Col } from 'react-bootstrap';
+import './style.scss';
 
 class ProductBox extends Component {
   render() {
-    const divStyle = {
-      backgroundImage: `url(${this.props.thumb})`,
-    };
-    return (
-      <div className="product-box">
-        <div className="product-box--thumb">
-          <img src={`${this.props.thumb}`} className="product-box--thumb--image" />
-        </div>
-        <div className="product-box--title">
-          <h2>{this.props.name}</h2>
-        </div>
-        <div className="product-box--button">
-          <Link to={`detail/` + this.props.url}>Detalhes do Produto</Link>
-        </div>
-      </div>
+    return (      
+          <Col md={4} className="productbox">
+            <Card style={{ width: '18rem' }}>
+              <figure className="productbox--main-image">
+                <Card.Img variant="top" src={`${this.props.thumb}`} />
+              </figure>
+              <Card.Body>
+                <Card.Title>{this.props.name}</Card.Title>
+                <LinkContainer to={`detail/` + this.props.url}><Button variant="primary">Detalhes do Produto</Button></LinkContainer>
+              </Card.Body>
+            </Card>
+          </Col>
     );
   }
 };

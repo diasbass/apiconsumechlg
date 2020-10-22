@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import ProductBox from '../../components/ProductBox';
+import { Container, Row } from 'react-bootstrap';
 
 class Products extends Component {
   state = {
@@ -46,7 +47,11 @@ class Products extends Component {
     }
     return (
       <div className="container">
-        {!this.state.loading ? products : loadingMessage}
+        <Container fluid>
+          <Row>
+            {!this.state.loading ? products : loadingMessage}
+          </Row>
+        </Container>
       </div>
     )
   }
