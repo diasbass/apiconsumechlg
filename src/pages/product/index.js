@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
+
+import { LinkContainer } from 'react-router-bootstrap';
+//import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 const ProductDetail = () => {
   const [productState, setProductState] = useState({
@@ -50,10 +54,16 @@ const ProductDetail = () => {
   }
 
   return (
-    <div className="productDetail container">
-      <Link to="/" className="btn-back">Voltar para lista de produtos</Link>
+    <div className="productDetail container">      
+      <LinkContainer to="/" activeClassName="">
+        <Button variant="outline-success" size="sm">Voltar para lista de produtos</Button>
+      </LinkContainer>
+
       <ProductItem />
-      <Link to="/" className="btn-back">Voltar para lista de produtos</Link>
+
+      <LinkContainer to="/" activeClassName="">
+        <Button variant="outline-success" size="sm">Voltar para lista de produtos</Button>
+      </LinkContainer>
     </div>
   );
 };
