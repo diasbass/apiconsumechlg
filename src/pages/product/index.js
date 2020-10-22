@@ -54,7 +54,7 @@ const ProductDetail = () => {
                       />
                       <span>{product.countries[0].name}</span>
                     </p>
-                    <h3>Sommelier: {product.sommelier.reviewer}</h3>
+                    <h4>Sommelier: {product.sommelier.reviewer}</h4>
                   </div>
                 </Col>
               </Row>
