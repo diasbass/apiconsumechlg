@@ -14,7 +14,7 @@ class ProductBox extends Component {
               </figure>
               <Card.Body>
                 <Card.Title>{this.props.name}</Card.Title>
-                <LinkContainer to={`detail/` + this.props.url}><Button variant="primary">Detalhes do Produto</Button></LinkContainer>
+                <LinkContainer to={`detail/` + this.props.url}><Button variant="success">Detalhes do Produto</Button></LinkContainer>
               </Card.Body>
             </Card>
           </Col>

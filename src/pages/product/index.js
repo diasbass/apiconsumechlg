@@ -22,24 +22,24 @@ const ProductDetail = () => {
 
   function ProductItem() {
     if (productState.product.length) {
-      return productState.product.map((item) => {
+      return productState.product.map((product) => {
         return (
-          <div className="product-detail" key={item.sku}>
-            <div className="product-detail--image">
-              <img src={item.images.medium} alt={item.name} />
+          <div className="product-spec" key={product.sku}>
+            <div className="product-spec--image">
+              <img src={product.images.medium} alt={product.name} />
             </div>
-            <div className="product-detail--info">
-              <h2>{item.name} </h2>
-              <p className="product-detail--country flex items-center">
-                País: <img src={item.countries[0].icon} width="20" alt={item.name} />
-                <span>{item.countries[0].name}</span>
-              </p>
-              <h3>Sommelier: {item.sommelier.reviewer}</h3>
-              <p>{item.sommelier.commentary}</p>
+            <div className="product-spec--description">
+              <h2>{product.name} </h2>              
+              <p>{product.sommelier.commentary}</p>
               <p>
                 <strong className="font-bold">Harmonização: </strong>
-                {item.pairing}
+                {product.pairing}
               </p>
+              <p className="product-spec--country">
+                País: <img src={product.countries[0].icon} width="20" alt={product.name} />
+                <span>{product.countries[0].name}</span>
+              </p>
+              <h3>Sommelier: {product.sommelier.reviewer}</h3>
             </div>
           </div>
         );
@@ -53,6 +53,7 @@ const ProductDetail = () => {
     <div className="productDetail container">
       <Link to="/" className="btn-back">Voltar para lista de produtos</Link>
       <ProductItem />
+      <Link to="/" className="btn-back">Voltar para lista de produtos</Link>
     </div>
   );
 };

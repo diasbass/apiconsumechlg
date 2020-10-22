@@ -1,9 +1,13 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import './style.scss';
 
 const Header = (props) => {
-  return (
+  return (    
     <header className="header">
-      <h2>{props.title}</h2>
+      <Container fluid className="header--element-container">
+        <h2>{props.title}</h2>
+      </Container>
     </header>
   )
 }
