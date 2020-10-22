@@ -46,7 +46,7 @@ const ProductDetail = () => {
                       {product.pairing}
                     </p>
                     <p className="product-spec--country">
-                      País:{" "}
+                      País de origem:{" "}
                       <img
                         src={product.countries[0].icon}
                         width="20"
