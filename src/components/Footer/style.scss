@@ -1,0 +1,14 @@
+.footer{
+  background-color: #6c1b78;
+  color: #fff;
+  margin: 10px auto 0 auto;
+  text-align: right;
+  display: flex;
+  &--element-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    p {
+      margin: 0;
+    }
+  }
+}

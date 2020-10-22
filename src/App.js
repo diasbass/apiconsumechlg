@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 const App = () => (
   <div className="App">
-    <Header title="Lista de vinhos" />
+    <Header title="( Evino ) - Lista de Vinhos" />
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
@@ -21,7 +21,7 @@ const App = () => (
             </Route>
           </Switch>
         </BrowserRouter>
-        <Footer text="Footer" />
+        <Footer text="( Evino ) - Lista de Vinhos" />
   </div>
 );
 
