@@ -4,6 +4,11 @@
   margin: 10px auto 0 auto;
   text-align: right;
   display: flex;
+  position: fixed;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.9;
   &--element-container {
     padding-top: 10px;
     padding-bottom: 10px;

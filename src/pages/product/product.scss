@@ -1,0 +1,9 @@
+.product-spec{
+  padding: 10px 0;
+  &--image {
+    text-align: center;
+    figure img {
+      margin: 0 auto;
+    }
+  }
+}

@@ -21,7 +21,7 @@ const App = () => (
             </Route>
           </Switch>
         </BrowserRouter>
-        <Footer text="( Evino ) - Lista de Vinhos" />
+        <Footer text="( Evino ) - Da vinícola para sua casa" />
   </div>
 );
 

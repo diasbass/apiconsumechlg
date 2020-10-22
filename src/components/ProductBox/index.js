@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import { Link } from "react-router-dom";
 import { LinkContainer } from 'react-router-bootstrap';
 import { Button, Card, Col } from 'react-bootstrap';
 import './style.scss';
